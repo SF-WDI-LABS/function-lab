@@ -1,12 +1,11 @@
 // YOUR CODE HERE
-sillySum(arr)
-
 // Write a function that takes an array of numbers and returns the sum of each number multiplied by its index.
 function sillySum(arr) {
   var count = 0;
-  for (var i = 0; count < arr.length; i ++) {
-    count += (count * arr[i]);
+  for (var i = 0; i < arr.length; i++) {
+    count += arr[i] * i;
   }
+  return count;
 }
 
 var myArray = [1, 2, 3];
